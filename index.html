@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GiwaPad — Launchpad built with the Ammora SDK</title>
+  <meta name="description" content="Browse, create and buy bonding-curve launches on GIWA Sepolia, built with @ammora-protocol/sdk." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Giwa<span>Pad</span><small>built with @ammora-protocol/sdk</small></div>
+    <nav>
+      <button data-tab="launches" class="active">Launches</button>
+      <button data-tab="create">Create</button>
+    </nav>
+    <button id="connect" class="primary">Connect wallet</button>
+  </header>
+  <main>
+    <div id="notice" class="notice" hidden></div>
+    <section id="launches"></section>
+    <section id="detail" hidden></section>
+    <section id="create" hidden></section>
+  </main>
+  <footer>Testnet only · GIWA Sepolia (91342) · Unaudited beta software, no real funds.</footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
